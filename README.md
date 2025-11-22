@@ -25,11 +25,16 @@ This project documents the creation of a compact home lab setup, designed for **
 - **Model:** Dell Wyse 5070 Thin Client × 4  
 - **Price:** ~$160 total (used / eBay)  
 - **Link:** [eBay Wyse 5070](https://www.ebay.com/sch/i.html?_nkw=wyse+5070+thin+client&_sacat=0&_from=R40&_trksid=p4624852.m570.l1311)  
-- **Upgrades:** Each node will be equipped with **32GB DDR4 RAM** and **SSDs** from previous projects for improved performance.
+- **Upgrades:** Each node will be equipped with **32GB DDR4 RAM** and **512 GB NVME 2280 SSDs** from previous projects for improved performance.
 
-### 5. Power Management
-- **PDU:** 1U rackmount PDU installed at the bottom of the rack for clean power distribution.  
-- **UPS:** Located externally due to the shallow depth of the mini-rack.
+### 5. PDU
+- **Model:** Dell Wyse 5070 Thin Client × 4  
+- **Price:** ~$120 total (2x 4 outlets)  
+- **Link:** [10 in rack PDU](https://www.amazon.com/ElecVoztile-Protection-Overload-RackMount-Cabinets/dp/B0FF41T167/ref=sr_1_1?crid=1WL8UQSKZXZYV&dib=eyJ2IjoiMSJ9.Bu0xSY1SswhayzQUYafiCVnMgWqZf7fvv3qKdg9d1AGpgUOmJEdXOIIr7ylUTGq7i3NnL9WZVRqvBorF7xhuCvQYFD_0EH-lZNpRMneySlcYcYLzhzFLUF15mRy8xv4kGzYUPWArDgqGqPt-NDaBFfMdt1inNSlKZdHbLbP5OtJliK33masBTWjkzrZILBM5hlHAniGZna8IlfoQ0dwXGWgSye7bBpfkFqMYMoehc8zScQj30N4j7yfauxFMdDsFLGQJSD99bSlhgntMJvB24VXoQggodXchdYr053393OM.Y9Qg3B--ZmarkMDFWcW3CA0f5BKpmq-XpSVypOsti8A&dib_tag=se&keywords=TP1713+4-outlet+Mini+Rack+PDU&qid=1763837647&s=electronics&sprefix=tp1713+4-outlet+mini+rack+pdu%2Celectronics%2C182&sr=1-1)  
+
+### 6. UPS (already owned)
+- **Model:** APC BN1500M@
+
 
 ---
 
