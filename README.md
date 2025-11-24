@@ -43,7 +43,8 @@ _An example of the DeskPI Rack T1 (8U) rack._
 - **Model:** Dell Wyse 5070 Thin Client × 4  
 - **Price:** ~$160 total (used / eBay)  
 - **Link:** [eBay Wyse 5070](https://www.ebay.com/sch/i.html?_nkw=wyse+5070+thin+client&_sacat=0&_from=R40&_trksid=p4624852.m570.l1311)  
-- **Upgrades:** Each node will be equipped with **32GB DDR4 RAM** and **512 GB NVME 2280 SSDs** from previous projects for improved performance.
+- **Upgrades:** Each node will be equipped with **32GB DDR4 RAM** and **256/512 GB SATA 2280 SSDs** from previous projects for improved performance.
+- These clients do not support nvme 2280 SSDs. 
 - **Power Draw:**
 - Idle: ~5–6 W
 - Light load: 7–10 W
@@ -53,12 +54,12 @@ _An example of the DeskPI Rack T1 (8U) rack._
 - Updating to the latest BIOS on these clients is recommended for stability.
 - These clients are reported to be reliable when running 24/7.
 - Memory: MemTest86 shows the J5005 CPU can efficiently address only ~30 GB of RAM; operations beyond that are slower but stable.
-- In Linux, 2 × 16 GB SO-DIMMs will result in 30 GB usable; the remaining 2 GB are unaddressed due to CPU memory controller limitations, but this does not negatively impact system stability.
-- Windows: To use 32 GB of RAM, Secure Boot must be disabled in BIOS and the following boot switch added:
+- **Linux:** Using 32 GB of RAM will result in 30 GB usable; the remaining 2 GB are unaddressed due to CPU memory controller limitations, but this does not negatively impact system stability.
+- **Windows:** To use 32 GB of RAM, Secure Boot must be disabled in BIOS and the following boot switch added:
 - `bcdedit /set {current} truncatememory 0x800000000`
 - After this, Windows will report 32 GB (~29.8 GB usable).
 - The memory limitation is due to the CPU memory controller; rank configuration (single vs. dual) does not affect this.
-- With 2 × 16 GB and Secure Boot enabled, Windows will not boot; the boot switch only works with Secure Boot disabled.
+- With 32 GB of RAM and Secure Boot enabled, Windows will not boot; the boot switch only works with Secure Boot disabled.
 
 ### 5. PDU
 - **Model:** TP1713 4-outlet Mini Rack PDU x2
@@ -86,17 +87,18 @@ _An example of the DeskPI Rack T1 (8U) rack._
 
 ---
 
-## **Rack Layout**
-```bash
-U1: (Top) Modem - Arris Surfboard S33
-U2: Router - Mikrotik RB5009
-U3: Patch Panel
-U4: Dell Wyse 5070 Thin Client #1
-U5: Dell Wyse 5070 Thin Client #2
-U6: Dell Wyse 5070 Thin Client #3
-U7: Dell Wyse 5070 Thin Client #4
-U8 (Bottom): PDUs
-```
+## Rack Layout
+
+| U Position   | Device                          |
+|--------------|---------------------------------|
+| U1 (Top)     | Modem – Arris Surfboard S33     |
+| U2           | Router – Mikrotik RB5009        |
+| U3           | Patch Panel                     |
+| U4           | Dell Wyse 5070 Thin Client #1   |
+| U5           | Dell Wyse 5070 Thin Client #2   |
+| U6           | Dell Wyse 5070 Thin Client #3   |
+| U7           | Dell Wyse 5070 Thin Client #4   |
+| U8 (Bottom)  | PDUs                             |
 
 **Notes on Layout:**
 
