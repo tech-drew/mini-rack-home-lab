@@ -4,6 +4,15 @@ This project documents the creation of a compact home lab setup, designed for **
 
 ---
 
+## Project Status: Work in Progress
+
+This repo documents the planning and design of my personal home-lab project. 
+Currently, this is a work-in-progress with design notes, hardware plans, and intended setup steps.
+
+Updates will be added as the lab is built and configured.
+
+---
+
 ## Hardware Components
 
 ### Rack
