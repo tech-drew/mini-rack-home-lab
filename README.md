@@ -43,8 +43,8 @@ _An example of the DeskPI Rack T1 (8U) rack._
 - **Model:** Dell Wyse 5070 Thin Client × 4  
 - **Price:** ~$160 total (used / eBay)  
 - **Link:** [eBay Wyse 5070](https://www.ebay.com/sch/i.html?_nkw=wyse+5070+thin+client&_sacat=0&_from=R40&_trksid=p4624852.m570.l1311)  
-- **Upgrades:** Each node will be equipped with **32GB DDR4 RAM** and **256/512 GB SATA 2280 SSDs** from previous projects for improved performance.
-- These clients do not support nvme 2280 SSDs. 
+- **Upgrades:** Each node will be equipped with **32GB DDR4 RAM** and **256GB 2280 SSDs** from previous projects for improved performance.
+- These clients do not support nvme 2280 SSDs. m.2 sata 2260/2280 SSDs must be used. 
 - **Power Draw:**
 - Idle: ~5–6 W
 - Light load: 7–10 W
