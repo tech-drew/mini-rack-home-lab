@@ -61,7 +61,17 @@ _An example of the DeskPI Rack T1 (8U) rack._
 - The memory limitation is due to the CPU memory controller; rank configuration (single vs. dual) does not affect this.
 - With 32 GB of RAM and Secure Boot enabled, Windows will not boot; the boot switch only works with Secure Boot disabled.
 
-### 5. PDU
+### 5. SSD Upgrades
+- **Model:** KingSpec 512 GB M.2 2280 SATA SSD  
+- **Price:** ~$40 new / $30–35 used  
+- **Link:** [Amazon KingSpec 512GB SATA SSD](https://www.amazon.com/KingSpec-512GB-Internal-Solid-NT-512/dp/B078MJHLCM/ref=sr_1_8?crid=209PTSVCAW3IL&dib=eyJ2IjoiMSJ9.UGh2mgu-tw2epCkB-ZBVrTGg1GDeeAUSLqYfQkuR4wCe8RLb1cb-oScjsBgWaYd6oSOoFiX4uZ-JzWNL0tD-WemctgN7dBqw4LFXytBB_VBpFhyVQtJfDsmqj0kKBGza3O_nV3MtFJYvMiF0aGfn2hmYCMHZa64BfVzU67VCUUgEarp4VqaZ3z9MIU-Y-6T_Q89HdvrCs2HCCJ0UmdiVGPZBtSPR14ohWZU8klWHSRk.yWz2mwjt4ReNXf6Wq6Lqa6d1mSQXNeZebsts8hVcoDA&dib_tag=se&keywords=m.2%2B2280%2Bsata%2Bssd%2B512gb&qid=1764137917&sprefix=m.2%2Bsata%2Bssd%2B2280%2B512%2Caps%2C179&sr=8-8&xpid=sNDlYSr9GFtA2&th=1)  
+- **Notes:**  
+  - Ideal for Wyse 5070 thin clients (SATA-only M.2 2280 slot).  
+  - Used SSDs are cheaper ($30–35) but have some wear. The cost savings don''t justify the risk of issues at this price point.  
+  - Sufficient for Linux, Proxmox, Docker, or lightweight Kubernetes workloads.  
+  - Ensure BIOS is updated and monitor health with SMART tools periodically.
+  
+### 6. PDU
 - **Model:** TP1713 4-outlet Mini Rack PDU x2
 - **Price:** ~$120 total (new / Amazon)  
 - **Link:** [10 in rack PDU](https://www.amazon.com/ElecVoztile-Protection-Overload-RackMount-Cabinets/dp/B0FF41T167/ref=sr_1_1?crid=1WL8UQSKZXZYV&dib=eyJ2IjoiMSJ9.Bu0xSY1SswhayzQUYafiCVnMgWqZf7fvv3qKdg9d1AGpgUOmJEdXOIIr7ylUTGq7i3NnL9WZVRqvBorF7xhuCvQYFD_0EH-lZNpRMneySlcYcYLzhzFLUF15mRy8xv4kGzYUPWArDgqGqPt-NDaBFfMdt1inNSlKZdHbLbP5OtJliK33masBTWjkzrZILBM5hlHAniGZna8IlfoQ0dwXGWgSye7bBpfkFqMYMoehc8zScQj30N4j7yfauxFMdDsFLGQJSD99bSlhgntMJvB24VXoQggodXchdYr053393OM.Y9Qg3B--ZmarkMDFWcW3CA0f5BKpmq-XpSVypOsti8A&dib_tag=se&keywords=TP1713+4-outlet+Mini+Rack+PDU&qid=1763837647&s=electronics&sprefix=tp1713+4-outlet+mini+rack+pdu%2Celectronics%2C182&sr=1-1)
@@ -80,9 +90,10 @@ _An example of the DeskPI Rack T1 (8U) rack._
 | Router Rack Mount   | $20        |
 | Patch Panel         | $30        |
 | Computer Nodes      | $160       |
+| SSDs (4 × 512 GB)   | $160       |
 | PDU                 | $120       |
 | Misc Patch Cables   | $30        |
-| **Total**           | **$560**   |
+| **Total**           | **$720**   |
 
 
 ---
