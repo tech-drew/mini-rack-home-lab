@@ -101,16 +101,9 @@ If you want remote access to devices on your LAN that **cannot run Tailscale**, 
 
 #### Diagram: Traffic Flow Through Subnet Router
 
-Remote Client
-      │
-      ▼
-  Tailscale Network
-      │
-      ▼
-Subnet Router Node (Wyse 5070)
-      │
-      ▼
-     LAN Devices (non-Tailscale nodes)
+Remote Client → Tailscale Network → Subnet Router Node (Wyse 5070) → LAN Devices (non-Tailscale nodes)
+
+**Note:** This example may result in data backflow, where traffic from remote clients to certain LAN devices passes through the subnet router node. This setup is intended for illustration; in production, plan routing carefully to minimize latency and avoid unnecessary hops.
 
 4. Result  
    - Remote devices connected to your Tailscale tailnet can now access all devices in your LAN, including those that do not run Tailscale.  
