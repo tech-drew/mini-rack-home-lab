@@ -35,12 +35,13 @@ In hindsight, a more balanced approach for multi-AP setups would be to pair the 
 
 I have not personally tested TP-Link Omada or Ruckus equipment. I deployed a full Ubiquiti setup at my parents’ house with multiple APs, and Wi-Fi stability and performance were excellent. However, the Ubiquiti Dream Router 7 has a relatively underpowered CPU and is more prosumer-focused than enterprise-grade in terms of features.
 
-For my home network and lab, the MikroTik router alone satisfies all routing and firewall requirements. If higher-layer routing, VPN, or advanced firewall capabilities are needed in the future, adding an OPNsense router would be a viable option.
+For my home network and lab, the MikroTik router alone meets all routing and firewall requirements. While next-generation enterprise routers exist, they are generally cost-prohibitive for home use. If more advanced firewall or routing capabilities are needed in the future, adding an OPNsense router is a viable option.
 
 **Key Takeaways**
 - **Single AP setups:** MikroTik APs perform well and provide advanced configuration options.
 - **Multi-AP setups:** For seamless roaming, consider pairing a MikroTik router with Ubiquiti APs.
 - **Hands-on learning:** MikroTik is excellent for exploring routing, VLANs, firewalling, and Layer 3 networking.
+
 
 
 
