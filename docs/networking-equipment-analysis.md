@@ -27,13 +27,13 @@ I evaluated the following platforms:
 
 **Conclusion**
 
-For my setup, I chose MikroTik equipment due to its enterprise-grade features, flexibility, and extensive configuration options, making it ideal for learning advanced networking in a home lab environment. The RB5009 PoE router handles routing, firewall, VLANs, and other Layer 3 functionality for my needs.
+For my setup, I chose MikroTik equipment for its enterprise-grade features, flexibility, and extensive configuration options, making it ideal for learning advanced networking in a home lab.
 
 One notable limitation is that MikroTik Wi-Fi lacks robust client roaming support. While a single MikroTik AP performs well, multiple APs in the same network often exhibit poor handoff behavior, making roaming unreliable. Based on my experience as a SysAdmin with a CCNA background, roaming was a consistent problem that I was unable to fully resolve. Some users report success using advanced CAPsMAN configurations, but in practice, achieving smooth multi-AP roaming with MikroTik APs can be difficult. I would not recommend using MikroTik APs for multi-AP Wi-Fi deployments. These issues were observed on RouterOS 7.10–7.17.
 
 In hindsight, a more balanced approach for multi-AP setups would be to pair the MikroTik RB5009 router with Ubiquiti APs managed via a Cloud Key.
 
-I have not personally tested TP-Link Omada or Ruckus equipment. I deployed a full Ubiquiti setup at my parents’ house with multiple APs, and Wi-Fi stability and performance were excellent. However, the Ubiquiti Dream Router 7 has a relatively underpowered CPU and is more prosumer-focused than enterprise-grade in terms of features.
+I have not personally tested TP-Link Omada or Ruckus equipment. I deployed a full Ubiquiti setup at my parents’ house with multiple APs, and Wi-Fi stability and performance have been excellent. However, the Ubiquiti Dream Router 7 has a relatively underpowered CPU and is more prosumer-focused than enterprise-grade in terms of features.
 
 For my home network and lab, the MikroTik router alone meets all routing and firewall requirements. While next-generation enterprise routers exist, they are generally cost-prohibitive for home use. If more advanced firewall or routing capabilities are needed in the future, adding an OPNsense router is a viable option.
 
@@ -41,3 +41,4 @@ For my home network and lab, the MikroTik router alone meets all routing and fir
 - **Single AP setups:** MikroTik APs perform well and provide advanced configuration options.
 - **Multi-AP setups:** For seamless roaming, consider pairing a MikroTik router with Ubiquiti APs.
 - **Hands-on learning:** MikroTik is excellent for exploring routing, VLANs, firewalling, and Layer 3 networking.
+
