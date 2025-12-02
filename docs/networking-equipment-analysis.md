@@ -19,7 +19,6 @@ I evaluated the following platforms:
 | **MikroTik routing + Ubiquiti APs** | RB5009 PoE | 2× U6 Pro | $950-$1100 | - Flexible routing options (MikroTik) <br>- Ubiquiti APs provide good wireless coverage | - Mixed ecosystem adds management complexity <br>- Two separate management platforms required | Combines powerful routing with polished wireless. Can leverage strengths of each platform. |
 | **MikroTik (routing & APs)** | RB5009 PoE | 2× cAP ax | $800-$1000 | - Affordable and feature-rich <br>- Advanced routing, firewall, and switching options | - Steeper learning curve <br>- Less polished GUI compared to UniFi/Omada | Offers complete control, budget-friendly. Ideal for hands-on configuration and home lab experimentation. Best choice if you want to learn networking deeply. |
 
-
 **Summary:**  
 - **Budget-friendly & flexible:** MikroTik for routing and APs.  
 - **Ease of management:** UniFi or Omada.  
@@ -30,7 +29,7 @@ I evaluated the following platforms:
 
 For this setup, I chose MikroTik equipment due to its enterprise-grade features, flexibility, and extensive configuration options, making it ideal for learning advanced networking in a home lab environment. The RB5009 PoE router handles routing, firewall, VLANs, and other Layer 3 functionality for my needs.
 
-One notable limitation is that MikroTik wireless lacks robust client roaming support. While a single MikroTik AP performs very well, multiple APs in the same network often exhibit poor handoff behavior, making roaming unreliable. Based on my experience as a SysAdmin with a CCNA background, roaming was a consistent problem that I was unable to fully resolve. Some users report success using advanced CAPsMAN configurations, but in practice, achieving smooth multi-AP roaming with MikroTik APs can be difficult. I would not recommend using MikroTik APs for multi-AP wireless deployments. These issues were observed on RouterOS 7.10–7.17.
+One notable limitation is that MikroTik wireless lacks robust client roaming support. While a single MikroTik AP performs well, multiple APs in the same network often exhibit poor handoff behavior, making roaming unreliable. Based on my experience as a SysAdmin with a CCNA background, roaming was a consistent problem that I was unable to fully resolve. Some users report success using advanced CAPsMAN configurations, but in practice, achieving smooth multi-AP roaming with MikroTik APs can be difficult. I would not recommend using MikroTik APs for multi-AP wireless deployments. These issues were observed on RouterOS 7.10–7.17.
 
 In hindsight, a more balanced approach for multi-AP setups would be to pair the MikroTik RB5009 router with Ubiquiti APs managed via a Cloud Key.
 
@@ -38,11 +37,10 @@ I have not personally tested TP-Link Omada or Ruckus equipment. I deployed a ful
 
 For my home network and lab, the MikroTik router alone satisfies all routing and firewall requirements. If higher-layer routing, VPN, or advanced firewall capabilities are needed in the future, adding an OPNsense router would be a viable option.
 
-Key Takeaways:
+**Key Takeaways**
+- **Single AP setups:** MikroTik APs perform well and provide advanced configuration options.
+- **Multi-AP setups:** For seamless roaming, consider pairing a MikroTik router with Ubiquiti APs.
+- **Hands-on learning:** MikroTik is excellent for exploring routing, VLANs, firewalling, and Layer 3 networking.
 
-Single AP setups: MikroTik APs perform well and provide advanced configuration options.
 
-Multi-AP setups: For seamless roaming, consider pairing a MikroTik router with Ubiquiti APs.
-
-Hands-on learning: MikroTik is excellent for exploring routing, VLANs, firewalling, and Layer 3 networking.
 
