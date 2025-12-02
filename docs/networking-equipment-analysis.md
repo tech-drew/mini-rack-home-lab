@@ -1,6 +1,6 @@
 # Networking Equipment Analysis (Work in Progress)
 
-**Notes:** 2022-2024, I performed extensive research on networking equipment before choosing the solution for this home lab.
+**Notes:** Between 2022 and 2024, I conducted extensive research on networking equipment before selecting a solution for this home network and lab environment.
 
 I evaluated the following platforms:
 - Ubiquiti UniFi
@@ -41,6 +41,7 @@ For my home network and lab, the MikroTik router alone satisfies all routing and
 - **Single AP setups:** MikroTik APs perform well and provide advanced configuration options.
 - **Multi-AP setups:** For seamless roaming, consider pairing a MikroTik router with Ubiquiti APs.
 - **Hands-on learning:** MikroTik is excellent for exploring routing, VLANs, firewalling, and Layer 3 networking.
+
 
 
 
