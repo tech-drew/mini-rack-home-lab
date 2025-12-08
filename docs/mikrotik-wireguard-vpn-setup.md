@@ -135,6 +135,7 @@ vpn.example.com — your public IP or Cloudflare DDNS domain
 Save and exit.
 
 # 9. Bring Up the WireGuard VPN on Fedora
+
 Start the VPN:
 `sudo wg-quick up wg-mikrotik`
 
@@ -148,5 +149,6 @@ If successful, you should see output similar to
 latest handshake: 2 seconds ago
 transfer: 32 KiB received, 28 KiB sent
 
+> **Note:** On Fedora, you can manage your WireGuard VPN using the **NetworkManager applet** instead of the terminal. After installing the `NetworkManager-wireguard` plugin, open the network settings from the system tray, add a new WireGuard connection, and enter your client/private key and MikroTik peer information. This allows you to **connect, disconnect, and enable auto-start** from the graphical interface without using `wg-quick` or `systemctl`.
 
 
