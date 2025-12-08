@@ -62,9 +62,8 @@ This document outlines the complete process of building a mini rack for my cloud
 
 One of the Wyse 5070 units had an issue with internal dust and dead bugs. I used compressed air and a soft brush to clean the components. Below is a photo of the unit after I opened it:
 
-![Wyse 5070 with Dead Bugs](docs/images/wyse-bugs.jpg)
+![Wyse 5070 with Dead Bugs](images/wyse-bugs.jpg)
 
-### RAM Upgrade
+This image shows the internal components of the device before cleaning.
 
-Additionally, I upgraded the RAM in each device to 8GB for better performance.
 
