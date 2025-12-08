@@ -60,7 +60,7 @@ This document outlines the complete process of building a mini rack for my cloud
 
 ### Cleaning Dead Bugs from Wyse Client
 
-One of the Wyse 5070 units had an issue with internal dust and dead bugs. I used compressed air and a soft brush to clean the components. Below is a photo of the unit after I opened it:
+One of the Wyse 5070 units had an issue with internal dust and dead bugs. I used a vacuum cleaner to clean the components. Below is a photo of the unit after I opened it before it was cleaned:
 
 ![Wyse 5070 with Dead Bugs](images/wyse-bugs.jpg)
 
