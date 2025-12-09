@@ -47,9 +47,25 @@ WireGuard will be configured separately under **Interfaces**.
 
 Your **Public Key** will appear after saving — you will need it for Fedora.
 
+# 3. Assign the Wireguard Interface you created in Step 2 an IP
+
+MikroTik WebFig / WinBox
+Go to:
+IP → Addresses → Add New
+Then fill in:
+Address:
+10.10.10.1/24  
+**Note:** Use a different address if you want. The ip addresses listed here are examples.)
+
+Interface:
+wg-vpn
+(the WireGuard interface you created in step 2)
+
+Click OK.
+
 ---
 
-# 3. Create a WireGuard Peer for Fedora
+# 4. Create a WireGuard Peer for Fedora
 
 1. Go to **Interfaces → WireGuard**
 2. Select your interface `wg-vpn`
@@ -66,7 +82,7 @@ Do not enter endpoint information for the client; it is only needed on the serve
 
 ---
 
-# 4. Assign a VPN Subnet to WireGuard
+# 5. Assign a VPN Subnet to WireGuard
 
 Go to **IP → Addresses → Add** and set:
 
@@ -77,7 +93,7 @@ This makes the MikroTik act as the VPN gateway.
 
 ---
 
-# 5. Add NAT Rule for VPN Clients
+# 6. Add NAT Rule for VPN Clients
 
 If you want the VPN to access the internet, add a NAT rule:
 
@@ -92,14 +108,14 @@ This allows VPN clients to reach external networks.
 
 ---
 
-# 6. Install WireGuard on Fedora
+# 7. Install WireGuard on Fedora
 
 Install WireGuard tools:
 
 ```bash
 sudo dnf install wireguard-tools
 ```
-# 7. Generate Client Keys on Fedora
+# 8. Generate Client Keys on Fedora
 
 Generate a private and public key pair for the Fedora WireGuard client:
 
@@ -111,7 +127,7 @@ This creates two files:
 privatekey — your Fedora client’s private key
 publickey — the public key you will paste into MikroTik under WireGuard → Peers → Public Key
 
-# 8. Create WireGuard Client Configuration on Fedora
+# 9. Create WireGuard Client Configuration on Fedora
 
 Create the WireGuard configuration file:
 `sudo nano /etc/wireguard/wg-mikrotik.conf`
@@ -134,7 +150,7 @@ Replace:
 vpn.example.com — your public IP or Cloudflare DDNS domain
 Save and exit.
 
-# 9. Bring Up the WireGuard VPN on Fedora
+# 10. Bring Up the WireGuard VPN on Fedora
 
 Start the VPN:
 `sudo wg-quick up wg-mikrotik`
