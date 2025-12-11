@@ -72,13 +72,21 @@ This image shows the internal components of the device before cleaning.
 
 Setup following the directions listed [here](mikrotik-wireguard-vpn-setup.md)
 
-## To Do List
-# **1. Start With the Base OS**
+
+# **1. Start With the Base OS** (12/11/2025)
 
 Pick one lightweight server OS for all Wyse nodes (Ubuntu Server or Rocky/Alma).
 Do identical installs so they behave like a small fleet.
 
+The above is done. Kubuntu 24.0.4.3 LTS was installed on all four home lab nodes.
+- Hostnames were set as node1, node2, node3, node4.
+- SSH was enabled on all four of the nodes for labbing purposes.
+- The distro-choice.md was created
+- kubuntu-ssh-setup.md was created
+
 ---
+
+## To Do List
 
 # **2. Set Up NTP, Syslog, and Backups (But Keep It Simple)**
 
