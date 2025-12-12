@@ -115,6 +115,9 @@ Install WireGuard tools:
 ```bash
 sudo dnf install wireguard-tools
 ```
+
+---
+
 # 8. Generate Client Keys on Fedora
 
 Generate a private and public key pair for the Fedora WireGuard client:
@@ -126,6 +129,8 @@ This creates two files:
 
 privatekey — your Fedora client’s private key
 publickey — the public key you will paste into MikroTik under WireGuard → Peers → Public Key
+
+---
 
 # 9. Create WireGuard Client Configuration on Fedora
 
@@ -140,15 +145,24 @@ DNS = 1.1.1.1
 
 [Peer]
 PublicKey = <MIKROTIK_PUBLIC_KEY>
-AllowedIPs = 0.0.0.0/0
+AllowedIPs = 192.168.88.0/24
 Endpoint = vpn.example.com:13231
 PersistentKeepalive = 25
+
+**Note:** Using `AllowedIPs = 0.0.0.0/0` will route *all* Internet traffic through the VPN tunnel. This is usually not recommended, as it can significantly slow down your connection.
+Instead, set `AllowedIPs` to the specific subnet you want to reach through the VPN. For example:
+
+```
+AllowedIPs = 192.168.88.0/24
+```
 
 Replace:
 <CLIENT_PRIVATE_KEY> — contents of your privatekey file
 <MIKROTIK_PUBLIC_KEY> — MikroTik WireGuard interface public key
 vpn.example.com — your public IP or Cloudflare DDNS domain
 Save and exit.
+
+---
 
 # 10. Bring Up the WireGuard VPN on Fedora
 
