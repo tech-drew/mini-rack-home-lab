@@ -14,15 +14,7 @@ Updates will be added as the lab is built and configured.
 ---
 
 ## Hardware Components
-**Notes:** I’m putting this homelab together for about $725 by scavenging parts and jury-rigging whatever I have or can find to make it all work.
-### Rack
-- **Model:** DeskPi Rack T1 (8U)  
-- **Price:** $150  
-- **Link:** [Amazon](https://www.amazon.com/GeeekPi-Cabinet-Equipment-RackMate-Rackmount/dp/B0CSCWVTQ7/ref=sr_1_2?crid=GDHRRH2UXRHZ&dib=eyJ2IjoiMSJ9.ctEHtcyHjljLot4TDmYNl004xVLEQxLpZ6ugneAQoWVkhRg059_UPw-724bbB1bXFfm6LohuAbtqAsw3Y_ZEye7Qc4MZkfSZiiaLHag1DHMgBd1no0EKbJ0-mZXOYH0hgPWFCIV2uGIPh01S6aZSlOyJRZ_7x74oMpAZ0z-fGocnI-kJR2dEKfzSLEl4ZJqIBLE0dZ3dHUGQY5rIRj6Tt9sq7-mFjNTY1nl513uWYpI.pNpAxwKHSyFE8YLJR-L5Uv-rvytRnUTUx0zTvjoTYb8&dib_tag=se&keywords=GeeekPi%2B8U%2BServer%2BCabinet&qid=1763829355&sprefix=geeekpi%2B8u%2Bserver%2Bcabinet%2Caps%2C230&sr=8-2&th=1)
-
-<img width="1400" height="788" alt="image" src="https://github.com/user-attachments/assets/42d80b2b-fe66-42c3-a23b-09caf1b81e0e" />
-_An example of the DeskPI Rack T1 (8U) rack._
-
+**Notes:** I’m putting this homelab together for about $229 by scavenging parts and jury-rigging whatever I have or can find to make it all work.
 
 ### 1. Modem
 - **Model:** Arris Surfboard S33 (already owned)  
@@ -42,13 +34,7 @@ _An example of the DeskPI Rack T1 (8U) rack._
 - **Link:** [MikroTik cAP ax](https://mikrotik.com/product/cap_ax)
 - **Note:** Extensive research went into deciding on the networking equipment for this project. The reasoning and analysis behind choosing the MikroTik RB5009 and cAP ax can be found in the [Networking Equipment Analysis](docs/networking-equipment-analysis.md) document.
 
-
-### 4. Patch Panel
-- **Model:** Keystone 12 Port Pass Thru Patch Panel 
-- **Price:** ~$30 total (new / Amazon)  
-- **Link:** [Patch Panel](https://www.amazon.com/Keystone-Support-Rapink-Shielded-Removable/dp/B09MTH3V14?pd_rd_w=HYv4P&content-id=amzn1.sym.53b72ea0-a439-4b9d-9319-7c2ee5c88973&pf_rd_p=53b72ea0-a439-4b9d-9319-7c2ee5c88973&pf_rd_r=HZYWPMP2SHM60SM6AWF1&pd_rd_wg=mejGb&pd_rd_r=fb67cfb8-fd95-449d-93e8-f6d026ee34aa&pd_rd_i=B09MTH3V14&psc=1&linkCode=sl1&tag=mmjjg-20&linkId=ed0e9e391744888147c556d160c23bee&language=en_US&ref_=as_li_ss_tl)  
-
-### 5. Compute Nodes
+### 4. Compute Nodes
 - **Model:** Dell Wyse 5070 Thin Client × 4  
 - **Price:** ~$155 total (used / Purchased 11/28/2025 on eBay)  
 - **Link:** [eBay Wyse 5070](https://www.ebay.com/sch/i.html?_nkw=wyse+5070+thin+client&_sacat=0&_from=R40&_trksid=p4624852.m570.l1311)  
@@ -70,10 +56,10 @@ _An example of the DeskPI Rack T1 (8U) rack._
 - The memory limitation is due to the CPU memory controller; rank configuration (single vs. dual) does not affect this.
 - With 32 GB of RAM and Secure Boot enabled, Windows will not boot; the boot switch only works with Secure Boot disabled.
 
-### 6. Storage
-- **Model:** Emtec X250 512 GB M.2 2280 SATA SSD  
-- **Price:** ~$170 total (new / Purchased 11/28/2025 on Amazon)  
-- **Link:** [Emtec X250 512GB SATA SSD](https://www.amazon.com/dp/B081HT8YYJ?ref=ppx_yo2ov_dt_b_fed_asin_title&th=1)  
+### 5. Storage
+- **Model:** SK Hynix 256 GB M.2 2280 SATA SSD  
+- **Price:** ~$74 total (used / Purchased 12/13/2025 on Ebay)  
+- **Link:** [SK Hynix 256 GB M.2 2280 SATA SSD ](https://www.ebay.com/itm/388921986094)  
 - **Notes:**  
   - Ideal for Wyse 5070 thin clients (SATA-only M.2 2280 slot).  
   - Used SSDs are cheaper ($30–35) but have some wear. The cost savings don''t justify the risk of issues at this price point.  
@@ -81,13 +67,7 @@ _An example of the DeskPI Rack T1 (8U) rack._
   - Ensure BIOS is updated and monitor health with SMART tools periodically.
   - I don't have a preference for this specific SSD brand. I choose whatever what cheapest with good reviews for this project.
   
-### 7. PDU
-- **Model:** TP1713 4-outlet Mini Rack PDU x2
-- **Price:** ~$120 total (new / Amazon)  
-- **Link:** [10 in rack PDU](https://www.amazon.com/ElecVoztile-Protection-Overload-RackMount-Cabinets/dp/B0FF41T167/ref=sr_1_1?crid=1WL8UQSKZXZYV&dib=eyJ2IjoiMSJ9.Bu0xSY1SswhayzQUYafiCVnMgWqZf7fvv3qKdg9d1AGpgUOmJEdXOIIr7ylUTGq7i3NnL9WZVRqvBorF7xhuCvQYFD_0EH-lZNpRMneySlcYcYLzhzFLUF15mRy8xv4kGzYUPWArDgqGqPt-NDaBFfMdt1inNSlKZdHbLbP5OtJliK33masBTWjkzrZILBM5hlHAniGZna8IlfoQ0dwXGWgSye7bBpfkFqMYMoehc8zScQj30N4j7yfauxFMdDsFLGQJSD99bSlhgntMJvB24VXoQggodXchdYr053393OM.Y9Qg3B--ZmarkMDFWcW3CA0f5BKpmq-XpSVypOsti8A&dib_tag=se&keywords=TP1713+4-outlet+Mini+Rack+PDU&qid=1763837647&s=electronics&sprefix=tp1713+4-outlet+mini+rack+pdu%2Celectronics%2C182&sr=1-1)
-- **Notes:** There are better small form factor PDUs that support snmp and ssh for monitoring. The PDUs with these capabilities are around $300 each. I need two small form factor PDUs so it would be $600 just for PDUs. $600 for PDUs is outside the budget for this project.
-
-### 8. UPS (already owned)
+### 6. UPS (already owned)
 - **Model:** APC BN1500M2
 - **Notes:** I’ll upgrade to a pure-sine-wave UPS when I can. For now, I’m improvising with the equipment I have.
 
@@ -95,44 +75,38 @@ _An example of the DeskPI Rack T1 (8U) rack._
 
 | Item                 | Cost (USD) |
 |---------------------|------------|
-| Rack                | $150       |
-| Modem Rack Mount    | $50        |
-| Router Rack Mount   | $20        |
-| Patch Panel         | $30        |
 | Computer Nodes      | $155       |
-| Storage (SSDs 4 × 512 GB)   | $170       |
-| PDU                 | $120       |
-| Misc Patch Cables   | $30        |
-| **Total**           | **$725**   |
+| Storage (SSDs 4 × 256 GB)   | $74       |
+| **Total**           | **$229**   |
 
 
 ---
 
-## Rack Layout
+## Rack v1 layout
 
 | U Position   | Device                          |
 |--------------|---------------------------------|
 | U1 (Top)     | Modem – Arris Surfboard S33     |
 | U2           | Router – Mikrotik RB5009        |
-| U3           | Patch Panel                     |
-| U4           | Dell Wyse 5070 Thin Client #1   |
-| U5           | Dell Wyse 5070 Thin Client #2   |
-| U6           | Dell Wyse 5070 Thin Client #3   |
-| U7           | Dell Wyse 5070 Thin Client #4   |
-| U8 (Bottom)  | PDUs                             |
+| U3           | Dell Wyse 5070 Thin Client #1   |
+| U4           | Dell Wyse 5070 Thin Client #2   |
+| U5           | Dell Wyse 5070 Thin Client #3   |
+| U6           | Dell Wyse 5070 Thin Client #4   |
+| U7           | Power Bricks                    |
+| U8 (Bottom)  | Power Bricks                    |
 
 **Notes on Layout:**
 
 - Networking equipment is at the top for easy monitoring and cable management.  
-- Compute nodes occupy rack space towards the middle of the rack for stability and airflow.  
-- PDUs at the bottom keeps the center of gravity low and allows clean upward routing of power cables.  
+- Compute nodes occupy rack space towards the middle of the rack for stability and airflow.
+- As of this time the setup does not include a Patch Panel, fans or PDUs. These items will be added in a future v2 build of the rack.
 - UPS is external due to mini-rack space constraints.
 
 ---
 
 ## **Project Goals**
 
-- Create a **compact, low-power, yet powerful home lab** for experimentation and learning.  
+- Create a **compact, low-power, efficient home lab** for experimentation and learning.  
 - Support **self-hosted applications**, **containerized workloads**, and **distributed systems labs**.  
 - Simulate **multi-node environments** typical in cloud engineering, with redundancy and HA setups.  
 
@@ -157,8 +131,9 @@ This home lab setup has been carefully designed for **learning, experimentation,
    - Power and cable management is sufficient for this setup, but upgrading to managed PDUs is a potential future improvement.
 
 4. **Storage**
-   - M.2 SATA SSDs (512 GB) provide adequate storage for OS and lightweight workloads.  
-   - Used SSDs are cheaper ($30–35), but reliability is higher when purchasing new ($40).  
+   - M.2 SATA SSDs (256 GB) provide basic storage for OS and lightweight workloads.  
+   - 512 GB SATA SSDs would be optimal. However, the 256 GB SSDs were $17 each where as the 512 GB ssds were $60 each. I am trying to keep cost low so I bought SSDs bases on the best value.
+   - I don't know what I don't know. I did not want to spend a ton of money on hardware until I have experiemented with this home lab and learn what I really need. Hence the SSD space compromise.
    - Storage can be expanded later if larger workloads are needed.
 
 5. **Overall Design**
@@ -180,9 +155,6 @@ This home lab setup has been carefully designed for **learning, experimentation,
 
 ## **References / Links**
 
-- [DeskPi Rack T1](https://www.amazon.com/GeeekPi-Cabinet-Equipment-RackMate-Rackmount/dp/B0CSCWVTQ7)  
-- [Arris Surfboard S33 Rackmount](https://www.etsy.com/listing/1417205328/arris-surfboard-s33-or-s34-cable-modem)  
-- [Mikrotik RB5009 Rackmount Kit](https://www.amazon.com/Mikrotik-K-79-rackmount-RB5009-L009/dp/B0CP9RDHC9)  
 - [Dell Wyse 5070 Thin Client](https://www.ebay.com/sch/i.html?_nkw=wyse+5070+thin+client)  
 
 ---
