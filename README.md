@@ -21,7 +21,8 @@ Updates will be added as the lab is built and configured.
 
 
 ### 2. Router
-- **Model:** Mikrotik RB5009 (already owned)  
+- **Model:** Mikrotik RB5009 (already owned)
+- **Price:** ~$260(typical retail)
 - **Note:** Extensive research went into deciding on the networking equipment for this project. The reasoning and analysis behind choosing the MikroTik RB5009 and cAP ax can be found in the [Networking Equipment Analysis](docs/networking-equipment-analysis.md) document.
 
 
