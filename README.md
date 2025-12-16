@@ -1,6 +1,6 @@
 # Home Lab: Mini-rack
 
-This project documents the creation of a compact home lab setup, designed for **self-hosting resources** and **studying to become a Cloud Engineer**. The goal is to have a fully functional 8U mini-rack that supports networking, compute nodes, and power management in a compact form factor.
+This project documents the creation of a compact home lab setup, designed for **self-hosting resources** and **studying tech**. The goal is to have a fully functional 8U mini-rack that supports networking, compute nodes, and power management in a compact form factor.
 
 ---
 
